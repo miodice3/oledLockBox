@@ -4,8 +4,8 @@
 #include <Adafruit_SSD1306.h>
 #include <ESP8266WiFi.h>
 
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
 
 // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
 #define OLED_RESET LED_BUILTIN      //4 // Reset pin # (or -1 if sharing Arduino reset pin)
@@ -13,6 +13,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
+
 static const unsigned char PROGMEM logo_bmp[] =
 { B00000000, B11000000,
   B00000001, B11000000,
@@ -32,7 +33,6 @@ static const unsigned char PROGMEM logo_bmp[] =
   B00000000, B00110000 };
 
 
-// Replace with your network credentials
 const char* ssid     = "PLACE YOUR WIFI NAME HERE";
 const char* password = "PLACE YOUR WIFI PASSWORD HERE";
 
@@ -86,7 +86,7 @@ void setup() {
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
   display.display();
-  delay(1000); // Pause for 2 seconds
+  delay(1000);
 
   // Clear the buffer
   display.clearDisplay();
@@ -99,11 +99,11 @@ void setup() {
 
 display.clearDisplay();
 
-  display.setTextSize(2);             // Normal 1:1 pixel scale
+  display.setTextSize(2);
   display.setTextColor(SSD1306_WHITE);        // Draw white text
   display.setCursor(0,0);             // Start at top-left corner
   display.println(F("My IP is"));
-  display.setTextSize(1);             // Draw 2X-scale text
+  display.setTextSize(1);             
   display.setTextColor(SSD1306_WHITE);
   display.println(WiFi.localIP());
   display.display();
