@@ -1,16 +1,3 @@
-/*********
-this is the most current oled & esp file. 
-
-as of 7/19 an attemp of integrating SD card support will be put in.
-
-future updates to include:
--replacement of adafruit graphic - DOES NOT APPEAR POSSIBLE WITHOUT MODIFICATION OF LIBRARY
--show IP for 30 seconds and then clear screen so no burn in - achieved but make longer, kept short for testing.
--check mark on OLED and clear after 30 seconds when box opened
--locked icon when box is locked for 30 seconds then clear
-
-check box to
-*********/
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
