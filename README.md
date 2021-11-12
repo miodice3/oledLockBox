@@ -10,6 +10,9 @@ It also utlizes a 5v power supply, capable of being powered off a standard USB 5
 
 The linked thingiverse files are the ones I used, they are a V1 and required filing to fit correctly.  If requested I can tune these but this was a proof of conecpt project.  A wiring diagram can also be produced upon request, if you are familiar with Arduino / ESP boards you should be able to manage by code review since there are only a couple connections.  Also do take note, there are many versions of the ESP and their pinouts change for many of these different versions, impacting your final wire connections.
 
+Demo:
+https://youtu.be/4JEKOjdgWd0
+
 https://gallery.appinventor.mit.edu/?galleryid=566c440a-3d4a-48fe-836f-bf24fb26edf9
 
 https://www.thingiverse.com/miodice3/designs
